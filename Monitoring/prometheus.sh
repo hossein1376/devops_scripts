@@ -16,9 +16,6 @@ fi
 # exit in case of error
 set -e
 
-# update system repositories
-apt update
-
 # create group prometheus and add user prometheus
 groupadd --system prometheus
 useradd -s /sbin/nologin --system -g prometheus prometheus
