@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# This script will upgrade node-exporter on a linux machine.
+# This script will upgrade node_exporter on a linux machine.
 # Hossein Yazdani, hosseinyazdani1376@gmail.com
 # August 2023
 
-# node-exporter version
+# node_exporter version
 version=1.6.1
 
 # check if running as root, or exit
@@ -28,8 +28,8 @@ rm /usr/bin/node_exporter
 mv node_exporter /usr/bin/
 chown node_exporter:node_exporter /usr/bin/node_exporter
 
-systemctl restart node-exporter
-systemctl status node-exporter
+systemctl restart node_exporter
+systemctl status node_exporter
 
 # cleanup
 cd ..

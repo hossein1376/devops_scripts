@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# This script will install node-exporter on a linux machine.
+# This script will install node_exporter on a linux machine.
 # Hossein Yazdani, hosseinyazdani1376@gmail.com
 # August 2023
 
-# node-exporter version
+# node_exporter version
 version=1.6.1
 
 # check if running as root, exit otherwise
@@ -34,7 +34,7 @@ mv node_exporter /usr/bin/
 chown node_exporter:node_exporter /usr/bin/node_exporter
 
 # create systemd service file
-cat >> /etc/systemd/system/node-exporter.service << EOF
+cat >> /etc/systemd/system/node_exporter.service << EOF
 [Unit]
 Description=Node Exporter
 After=network.target
@@ -52,9 +52,9 @@ EOF
 # enable and start the service
 systemctl daemon-reload
 sleep 2
-systemctl enable node-exporter
-systemctl start node-exporter
-systemctl status node-exporter
+systemctl enable node_exporter
+systemctl start node_exporter
+systemctl status node_exporter
 
 # add node_exporter to the Prometheus config file
 echo "
