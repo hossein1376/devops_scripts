@@ -30,8 +30,8 @@ tar xvf node_exporter-${version}.linux-amd64.tar.gz
 cd node_exporter-${version}.linux-amd64 || { echo "Failed to change directory."; exit 1; }
 
 # move to path and set the ownership
-mv node_exporter /usr/bin/
-chown node_exporter:node_exporter /usr/bin/node_exporter
+mv node_exporter /usr/local/bin/
+chown node_exporter:node_exporter /usr/local/bin/node_exporter
 
 # create systemd service file
 cat >> /etc/systemd/system/node_exporter.service << EOF
@@ -43,7 +43,7 @@ After=network.target
 User=node_exporter
 Group=node_exporter
 Type=simple
-ExecStart=/usr/bin/node_exporter
+ExecStart=/usr/local/bin/node_exporter
 
 [Install]
 WantedBy=multi-user.target

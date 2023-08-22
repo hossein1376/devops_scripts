@@ -22,11 +22,11 @@ tar xvf node_exporter-${version}.linux-amd64.tar.gz
 cd node_exporter-${version}.linux-amd64 || { echo "Failed to change directory."; exit 1; }
 
 # remove old binaries
-rm /usr/bin/node_exporter
+rm /usr/local/bin/node_exporter
 
 # move to path and set the ownership
-mv node_exporter /usr/bin/
-chown node_exporter:node_exporter /usr/bin/node_exporter
+mv node_exporter /usr/local/bin/
+chown node_exporter:node_exporter /usr/local/bin/node_exporter
 
 systemctl restart node_exporter
 systemctl status node_exporter

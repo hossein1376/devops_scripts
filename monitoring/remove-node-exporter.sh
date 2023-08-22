@@ -14,7 +14,7 @@ fi
 set -e
 
 # remove binary
-rm /usr/bin/node_exporter
+rm /usr/local/bin/node_exporter
 
 # remove node_exporter user
 userdel node_exporter
