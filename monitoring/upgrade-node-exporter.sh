@@ -2,10 +2,10 @@
 
 # This script will upgrade node_exporter on a linux machine.
 # Hossein Yazdani, hosseinyazdani1376@gmail.com
-# August 2023
+# Last updated in November 2023
 
 # node_exporter version
-version=1.6.1
+version=1.7.0
 
 # check if running as root, or exit
 if [ "$EUID" -ne 0 ]
