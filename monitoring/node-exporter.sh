@@ -2,7 +2,7 @@
 
 # This script will install node_exporter on a linux machine.
 # Hossein Yazdani, hosseinyazdani1376@gmail.com
-# Last updated in November 2023
+# Last update: November 2023
 
 # node_exporter version
 version=1.7.0

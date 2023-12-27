@@ -2,10 +2,10 @@
 
 # This script will upgrade Prometheus on a linux machine.
 # Hossein Yazdani, hosseinyazdani1376@gmail.com
-# Last updated in November 2023
+# Last update: December 2023
 
 # Prometheus version
-version=2.47.2
+version=2.48.1
 
 # check if running as root, or exit
 if [ "$EUID" -ne 0 ]

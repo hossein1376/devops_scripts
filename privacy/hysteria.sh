@@ -18,7 +18,7 @@ mkdir /root/hy
 cd /root/hy || { echo "Failed to change directory."; exit 1; }
 
 # download the binary
-wget https://github.com/apernet/hysteria/releases/download/app%2Fv2.2.0/hysteria-linux-amd64
+wget https://github.com/apernet/hysteria/releases/download/app%2Fv2.2.2/hysteria-linux-amd64
 
 # give it execute permission
 chmod +x ./hysteria-linux-amd64
