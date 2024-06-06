@@ -2,10 +2,10 @@
 
 # This script will install Prometheus on a linux machine.
 # Hossein Yazdani, hosseinyazdani1376@gmail.com
-# Last update: December 2023
+# Last update: June 2024
 
 # Prometheus version
-version=2.48.1
+version=2.52.0
 
 # check if running as root, or exit
 if [ "$EUID" -ne 0 ]
