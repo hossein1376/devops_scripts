@@ -2,10 +2,10 @@
 
 # This script will upgrade node_exporter on a linux machine.
 # Hossein Yazdani, hosseinyazdani1376@gmail.com
-# Last update: November 2023
+# Last update: June 2024
 
 # node_exporter version
-version=1.7.0
+version=1.8.1
 
 # check if running as root, or exit
 if [ "$EUID" -ne 0 ]
@@ -28,8 +28,8 @@ rm /usr/local/bin/node_exporter
 mv node_exporter /usr/local/bin/
 chown node_exporter:node_exporter /usr/local/bin/node_exporter
 
-systemctl restart node_exporter
-systemctl status node_exporter
+systemctl restart node-exporter
+systemctl status node-exporter
 
 # cleanup
 cd ..
