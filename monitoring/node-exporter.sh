@@ -5,7 +5,7 @@
 # Last update: June 2024
 
 # node_exporter version
-version=1.8.1
+version=1.9.1
 
 # check if running as root, exit otherwise
 if [ "$EUID" -ne 0 ]

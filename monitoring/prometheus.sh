@@ -5,7 +5,7 @@
 # Last update: June 2024
 
 # Prometheus version
-version=2.52.0
+version=2.53.4
 
 # check if running as root, or exit
 if [ "$EUID" -ne 0 ]
